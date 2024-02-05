@@ -1,9 +1,13 @@
 
 .carrito {
-    background-color: bisque;
+    background-color: var(--colorHueso);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.carrito .header-cart .card .p .producto{
+text-align: center;
 }
 
 .carrito .header-cart {
@@ -27,9 +31,18 @@
 .carrito .header-cart .back-container button{
     border: none;
     border-radius: 10px;
-    background-color: #8888c9;
+    background-color: var(--colorMarron);
     padding: 10px;
-    color:#fff;
+    color: #fff;    
+}
+.eliminar {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--colorMarron);
+    padding: 10px;
+    color: #fff;
+    margin-inline: auto;
+    align-self: self-start;
 }
 
 .carrito .header-cart .back-container button:active{
@@ -44,8 +57,8 @@
 .carrito .productos .card{
     width: 80%;
     margin: 10px auto;
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: var(--colorHueso);
+    
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -54,11 +67,11 @@
 }
 .carrito .productos .card .abm{
     display: flex;
-    background-color: #ebebeb;
+    background-color: var(--colorMarron);
     padding: 10px 20px;
     width: 100px;
     border-radius: 10px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin: 10px 0;
     width: 50%;
@@ -87,14 +100,33 @@
     font-size: 30px;
     text-align: center;
     display: block;
-    width: 50%;
+    width: 51%;
 }
 
 .carrito .compra{
     width: 100%;
+
 }
 
 .carrito .pago{
     width: 100%;
 }
 
+.productoALaVenta{
+    text-align: center;
+    /* border-inline-width: 4px; */
+    width: 60%;
+    font-size: 20px;
+    font-family: 'IBM Plex Serif';
+    display: inline;
+    }
+
+.pago{
+    border: outset;
+    border-radius: 10px;
+    background-color: var(--colorMarron);
+    padding: 10px;
+    color: var(--colorHueso);
+    /* align-self: center; */
+    text-align: center;
+}

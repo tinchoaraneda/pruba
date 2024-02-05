@@ -4,44 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-    <header class="main-header">
-        <i class="fa-solid fa-bars menu"></i>
-        <figure>
-            <img class="logo" src="images/logo_oscuro.jpeg" alt="Logo">
-        </figure>
-
-        <form action="/buscar" method="get">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input class="input" type="text" id="search" name="buscador" placeholder="Artista, Categoría, Pintura...">
-        </form>
-        <nav class="nav-bar">
-            <ul class="nav-ul">
-                <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
-        </nav>
+    <header>
     </header>
 
     <main class="carrito">
         <section class="header-cart">
             <h1>Adquiri tus articulos</h1>
             <div class="back-container">
-                <button>Back</button>
+                <button>Atras</button>
             </div>
         </section>
         <section class="productos">
             
             <article class="card">
-                <button>trash</button>
+                <button class="eliminar">Eliminar</button>
                 <div>
                     <img src="/images/producto-1.png" alt="Galaxia">
                 </div>
-                <p>Galaxia</p>
+                <p class="productoALaVenta">Galaxia</p>
                 <div class="abm">
                     <button>-</button>
                     <p class="number">1</p>
@@ -54,13 +38,13 @@
                 <div>
                     <img src="https://cdn.discordapp.com/attachments/953869331425534003/1203165879333027860/producto-2.png?ex=65d01a8b&is=65bda58b&hm=f589ed1960397745cfca70352519a7b4167c94afd47c3fb0a25822aad2e328ff&" alt="cuadro horrible 2">
                 </div>
-                <p>Cuadro sucio pero impecable</p>
+                <p class="productoALaVenta">Cuadro sucio pero impecable</p>
                 <div class="abm">
                     <button>-</button>
                     <p class="number">1</p>
                     <button>+</button>
                 </div>
-                <span class="price">$18012312000</span>
+                <span class="price">$18000</span>
             </article>
         </section>
         <section class="compra">
@@ -85,7 +69,7 @@
                 </ul>
         </section>
         <section class="pago">
-            <button>Pagar</button>
+            <button class="pago">Pagar</button>
         </section>
     </main>
     
